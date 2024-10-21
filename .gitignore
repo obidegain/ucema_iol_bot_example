@@ -1,0 +1,6 @@
+.env
+market_data.db
+*.log
+
+node_modules/
+venv/
