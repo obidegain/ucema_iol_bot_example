@@ -49,6 +49,7 @@ class InvertirOnlineAPI:
         headers = {'Content-Type': 'application/x-www-form-urlencoded'}
 
         response = requests.post(self.token_url, headers=headers, data=payload)
+
         if response.status_code != 200:
             logger.error("Error al refrescar el token: %s", response.status_code)
             raise APIError(response.status_code, "Error al refrescar el token")
